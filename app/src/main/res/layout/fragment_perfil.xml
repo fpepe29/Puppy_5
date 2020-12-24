@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_shadow_end_color"
+    tools:context=".vistafragment.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ivFotoPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vaca"
+
+            app:civ_border_color="#009688"
+            app:civ_border_width="6dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#00BCD4"
+            app:civ_shadow_radius="10dp"
+            >
+
+        </com.mikhaellopez.circularimageview.CircularImageView>
+
+
+        <TextView
+            android:id="@+id/ivNombreFotoPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaca"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/nombre_contacto">
+
+        </TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingVertical="@dimen/margin_top"
+            android:id="@+id/rvMascotasGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/elevacion_drawaer">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

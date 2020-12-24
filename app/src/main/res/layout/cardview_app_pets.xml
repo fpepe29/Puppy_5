@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/AppTheme"
+    card_view:cardCornerRadius="@dimen/corner_radius_cardview"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/imgFotoCVgrid"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/vaca"></ImageView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/btnDarHueso"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_light_background"
+                card_view:srcCompat="@drawable/icons8_hueso_azul"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvNombreCV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/pnombre"
+                android:textSize="@dimen/Texto_segundario"
+                android:textStyle="bold"
+                android:gravity="center"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/btnDarHueso"
+                card_view:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_hueso_naranja"
+                card_view:layout_constraintEnd_toStartOf="@+id/tvQtyHuesosCV"
+                tools:layout_editor_absoluteY="0dp"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <TextView
+                android:id="@+id/tvQtyHuesosCV"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/pQtyHuesos"
+                android:gravity="center"
+                android:textSize="@dimen/Texto_segundario"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="pnombre">nombre</string>
+    <string name="pQtyHuesos">0</string>
+    <string name="menu_about">Acerca</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="texto_about">Sobre la App</string>
+    <string name="texto_contacto_nombre">Nombre:</string>
+    <string name="texto_contacto_email">Email:</string>
+    <string name="texto_contacto_mensaje">Mensaje:</string>
+    <string name="texto_about_info">Creado por: Fernando Pepe, Montevideo, Uruguay</string>
+    <string name="texto_contacto_asunto">Asunto:</string>
+    <string name="todo">TODO</string>
+
+
+</resources>
